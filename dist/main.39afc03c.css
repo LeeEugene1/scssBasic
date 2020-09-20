@@ -1,7 +1,58 @@
+@charset "UTF-8";
+/*npx parcel index.html*/
+/* 변수, 중첩 */
 .container .item {
   width: 300px;
   height: 100px;
   background: tomato;
+}
+
+/*상위선택자 참조 &*/
+.btn.active {
+  background-color: red;
+}
+
+/*중첩벗어나기 @at-root*/
+.section {
+  width: 100px;
+  height: 200px;
+}
+.section .item2 {
+  width: 100px;
+  height: 200px;
+  background-color: pink;
+}
+.box {
+  width: 100px;
+  height: 200px;
+  background-color: lightblue;
+}
+
+/*!global(전역속성)*/
+.boxGlobal {
+  color: #fff;
+  width: 200px;
+  height: 100px;
+  background: #111;
+}
+
+.boxGlobalTest {
+  color: #fff;
+  width: 200px;
+  height: 100px;
+  background: #111;
+}
+
+/*중첩된 속성*/
+.boxWrap {
+  background: lightcoral;
+  width: 100px;
+  height: 200px;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */
